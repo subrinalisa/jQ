@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <!--Font Links-->
+    <!--CSS Links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Jquery Events</title>
+    <script src="https://kit.fontawesome.com/bbb5971462.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="text-center">Jquery Events</h1>
+            <div class="row">
+                <!--focus-->
+                <div class="col-md-4 mt-4">
+                    <h4>Focus</h4>
+                    <form action="#">
+                        <input type="text" class="form-control" id="focus">
+                        <span>Enter your name</span>
+                    </form>
+                </div>
+                <!--Focusin/Focusout-->
+                <div class="col-md-4 mt-4">
+                    <div class="focusin">
+                        <h4>Focusin/Focusout </h4>
+                        <form action="#">
+                            <input type="text" class="form-control mb-2" placeholder="Name">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </form>
+                    </div>
+                </div>
+                <!--Blur-->
+                <div class="col-md-4 mt-4">
+                    <h4>Blur</h4>
+                    <form action="#">
+                        <input type="text" class="form-control" id="blur_input" placeholder="Name">
+                        <small>Write something in the input field, and then click outside the field to lose focus </small>
+                    </form>
+                </div>
+                <!--change-->
+                <div class="col-md-4 mt-4">
+                    <h4>Change</h4>
+                    <form action="#">
+                        <input type="text" class="form-control" id="change_input" placeholder="Name">
+                        <small>Write something in the input field, and then press enter or click outside the field</small>
+                    </form>
+                </div>
+                <!--click-->
+                <div class="col-md-4 mt-4">
+                    <h4>Click</h4>
+                    <a href="#" id="clk">Click here</a>
+                    <p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sed voluptate blanditiis praesentium ratione dolore aut sapiente reiciendis fugit temporibus.</p>
+                </div>
+                <!--dblclick-->
+                <div class="col-md-4 mt-4">
+                    <h4>Double Click</h4>
+                    <a href="#" id="dblclk">Click here</a>
+                    <p id="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sed voluptate blanditiis praesentium ratione dolore aut sapiente reiciendis fugit temporibus.</p>
+                </div>
+                <!--mouseenter/mouseleave-->
+                <div class="col-md-4 mt-4">
+                    <div class="mouseenter">
+                        <h4>Mouseenter/Mouseleave</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, blanditiis.</p>
+                    </div>
+                </div>
+                <!--hover-->
+                <div class="col-md-4 mt-4">
+                    <div class="hover">
+                        <h4>Hover</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, blanditiis.</p>
+                    </div>
+                </div>
+                <!--mousemove/mouseout-->
+                <div class="col-md-4 mt-4">
+                    <div class="mousemove">
+                        <h4>Mousemove/Mouseout</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, blanditiis.</p>
+                    </div>
+                </div>
+                <!--on/off-->
+                <div class="col-md-4 mt-4">
+                    <div class="onoff">
+                        <h4>On/Off</h4>
+                        <p>mouse enter, mouse leave & click</p>
+                        <a href="#" class="btn btn-warning">Remove Click function</a>
+                    </div>
+                </div>
+                <!--scroll-->
+                <div class="col-md-4 mt-4">
+                    <div class="scroll">
+                        <h4>Scroll</h4>
+                        <p style="width: 200px; height: 100px; border: 1px solid #000; overflow: scroll; padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis .Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis .Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis </p>
+                    </div>
+                </div>
+                <!--submit-->
+                <div class="col-md-4 mt-4">
+                    <div class="submit">
+                        <h4>Submit</h4>
+                        <form action="#">
+                            <input type="text" class="form-control" placeholder="Name" required>
+                            <button type="submit" class="btn btn-secondary mt-3">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--jQuery Links-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            //    focus
+            $('#focus').focus(function() {
+                $('span').fadeOut(2000);
+            });
+            //    Focusin/Focusout 
+            $('.focusin input').focusin(function() {
+                $(this).css("background-color", "#eee");
+            });
+            $('.focusin input').focusout(function() {
+                $(this).css("background-color", "#fff");
+            });
+            //    blur
+            $('#blur_input').blur(function() {
+                alert("input lost focus!");
+            });
+            //    change
+            $('#change_input').change(function() {
+                alert("text has changed!");
+            });
+            //    click
+            $('#clk').click(function() {
+                $('#text').hide();
+            });
+            //    dblclick
+            $('#dblclk').dblclick(function() {
+                $('#text2').hide();
+            });
+            //    mouseenter/mouseleave
+            $('.mouseenter p').mouseenter(function() {
+                $(this).css("color", "yellow");
+            });
+            $('.mouseenter p').mouseleave(function() {
+                $(this).css("color", "red");
+            });
+            //    hover
+            $('.hover p').hover(function() {
+                $(this).css("color", "blue");
+            }, function() {
+                $(this).css("color", "pink");
+            });
+            //    mousemove/mouseout
+            $('.mousemove p').mousemove(function() {
+                $(this).css("text-decoration", "underline");
+            });
+            $('.mousemove p').mouseout(function() {
+                $(this).css("background-color", "green");
+            });
+            //    on/off
+            $('.onoff p').on({
+                mouseenter: function() {
+                    $(this).css("color", "blue");
+                },
+                mouseleave: function() {
+                    $(this).css("color", "red");
+                },
+                click: function() {
+                    $(this).css("background-color", "yellow");
+                }
+            });
+            $('.onoff a').click(function() {
+                $('.onoff p').off("click");
+            });
+            //    scroll
+            $('.scroll p').scroll(function() {
+                if ($(this).scrollTop() > 10) {
+                    $('.scroll').css("background", "yellow");
+                } else {
+                    $('.scroll').css("background", "red");
+                }
+            });
+            //    submit
+            $('.submit form').submit(function() {
+                alert("Successfully Submitted");
+            });
+        });
+    </script>
+</body>
+</html>

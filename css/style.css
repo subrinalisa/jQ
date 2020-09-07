@@ -1,3 +1,11 @@
-#slider{
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+}
+.delay .box{
+    display: none;
+}
+.slide p{
     display: none;
 }

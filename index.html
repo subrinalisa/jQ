@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!--Required meta tags-->
     <meta charset="utf-8">
@@ -26,11 +25,10 @@
     <title>JQ Functions</title>
     <script src="https://kit.fontawesome.com/bbb5971462.js" crossorigin="anonymous"></script>
 </head>
-
 <body data-spy="scroll" data-target=".navbar" data-offset="110">
     <!--   navbar-->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="nav">
             <div class="container">
                 <a class="navbar-brand" href="index.html">JQ</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,7 +92,7 @@
             </div>
         </div>
     </section>
-    <!--    counter-->
+    <!--counter-->
     <section id="counterup" class="py-5 bg-dark text-white text-center">
         <div class="container">
             <h1 class="">Counterup</h1>
@@ -152,7 +150,7 @@
             </div>
         </div>
     </section>
-    <!--    wow-->
+    <!--wow-->
     <section id="wow" class="bg-dark text-white py-5">
         <div class="container">
             <h1 class="text-center">WOW</h1>
@@ -168,7 +166,7 @@
             </div>
         </div>
     </section>
-    <!--    magnific-->
+    <!--magnific-->
     <section id="magnific" class="py-5">
         <div class="container">
             <h1 class="text-center">Magnific Popup</h1>
@@ -280,12 +278,12 @@
             </div>
         </div>
     </section>
-    <!--    masonry-->
+    <!--masonry-->
     <section id="masonry" class="py-5">
         <div class="container">
             <h1 class="text-center mb-5">Masonry</h1>
-            <div class="row masonry" data-target=".item" data-col="12" data-col-sm="4" data-col-md="4">
-                <div class="col-12 col-sm-4 col-md-4">
+            <div class="row masonry" data-target=".item" data-col-xs="12" data-col-sm="4" data-col-md="4">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="item">
                         <div class="card">
                             <div class="card-body">
@@ -294,12 +292,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 col-md-4">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="item">
                         <img src="images/menu4.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 col-md-4">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="item mt-4">
                         <div class="card">
                             <div class="card-header">
@@ -311,7 +309,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 col-md-4">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="item mt-4">
                         <div class="card">
                             <div class="card-body">
@@ -320,12 +318,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 col-md-4">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="item mt-5">
                         <img src="images/menu4.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 col-md-4">
+                <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="item mt-5">
                         <div class="card">
                             <div class="card-header">
@@ -358,8 +356,8 @@
             </div>
         </div>
     </section>
-    <!--    jq Function-->
-    <section id="jqfunc">
+    <!--jq Function-->
+    <section id="jqfunc" class="d-lg-block d-none">
         <div class="container">
             <h1 class="text-center">Jquery Functions</h1>
             <div class="row">
@@ -544,7 +542,7 @@
     <script src="vendor/onepagenav/jquery.nav.js"></script>
     <script src="vendor/typed.js-master/typed.js"></script>
     <script src="vendor/readmore/readmore.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
     <script src="vendor/counter-up-master/jquery.counterup.min.js"></script>
     <script src="vendor/skeletabs/skeletabs.js"></script>
     <script src="vendor/wow-master/jq/wow.min.js"></script>
@@ -595,7 +593,7 @@
                 fadeColor1: "rgba(255,255,255,0)",
                 fadeColor2: "rgba(255,255,255,1)"
             });
-            //counter plugin
+            //counter
             $('.counter').counterUp({
                 delay: 10,
                 time: 5000
@@ -630,8 +628,6 @@
             //scrollToTop
             $('body').materialScrollTop();
         });
-
     </script>
 </body>
-
 </html>

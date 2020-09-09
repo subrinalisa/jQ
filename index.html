@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!--Required meta tags-->
     <meta charset="utf-8">
@@ -9,6 +10,15 @@
     <!--Favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="">
     <!--Font Links-->
+    <!--plugin links-->
+    <link rel="stylesheet" href="vendor/readmore/readmore.css">
+    <link rel="stylesheet" href="vendor/skeletabs/skeletabs.css">
+    <link rel="stylesheet" href="vendor/wow-master/css/animate.css">
+    <link rel="stylesheet" href="vendor/magnific-popup-master/css/magnific-popup.css">
+    <link rel="stylesheet" href="vendor/simplelightbox-master/simple-lightbox.min.css">
+    <link rel="stylesheet" href="vendor/slick/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/css/slick-theme.css">
+    <link rel="stylesheet" href="vendor/material-scrolltop-master/css/material-scrolltop.css">
     <!--CSS Links-->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -16,8 +26,340 @@
     <title>JQ Functions</title>
     <script src="https://kit.fontawesome.com/bbb5971462.js" crossorigin="anonymous"></script>
 </head>
-<body>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="110">
+    <!--   navbar-->
     <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top" id="nav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">JQ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#typedjs">Typed js</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#readmore">Readmore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#counterup">Counterup</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skeletab">Skele tab</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#wow">WOW</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#magnific">Magnific Popup</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#glightbox">Gallery Lightbox</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mixup">Mix It Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#masonry">Masonry</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#slicks">Slick Slider</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#jqfunc">JQ Function</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--typed.js-->
+    <section id="typedjs" class="bg-dark text-white text-center mt-5" style="padding: 100px 0;">
+        <div class="container">
+            <h1>Typed js plugin</h1>
+            <h2 class="typedtext mt-5"></h2>
+        </div>
+    </section>
+    <!--read more-->
+    <section id="readmore" class="py-5">
+        <div class="container">
+            <h1 class="text-center">Read More</h1>
+            <div class="read-more my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci optio, voluptates natus expedita quia iste neque deserunt consectetur modi atque dolor voluptatem ipsum perspiciatis blanditiis provident dolore consequuntur doloribus voluptas ad illo, sed, animi accusamus placeat! At minus facere adipisci! Dolor ad velit, modi quisquam natus ut esse, rerum excepturi dignissimos reprehenderit, id vitae saepe voluptatum ullam, sapiente quos eius. Nihil excepturi vel cupiditate perferendis voluptates, quidem labore blanditiis quos distinctio qui id, ullam recusandae molestias voluptatem nisi magnam sed dicta, repellendus aperiam adipisci facere dolor. Ratione officia, aliquid reprehenderit. Soluta placeat suscipit repellat voluptatem nesciunt, perferendis porro nemo a aspernatur debitis officia quibusdam minus, pariatur reprehenderit, eveniet optio nisi dolore ex consequatur libero magni delectus unde. Vitae dolorum, id explicabo minus aperiam numquam sit, repudiandae voluptatibus eveniet. Fuga optio, ad laboriosam nesciunt adipisci beatae ipsum accusantium aliquid, possimus libero error quasi voluptatum molestiae culpa eius debitis architecto quo quas cupiditate expedita inventore facilis accusamus nemo deserunt consequuntur. Accusantium explicabo delectus, soluta, quos inventore magnam! Eligendi cumque mollitia ab esse, odio, at porro voluptate illum fugit consequuntur nesciunt accusantium. Ipsa aspernatur at architecto commodi, vero, cupiditate ad, numquam harum nemo nam deserunt consequuntur impedit possimus distinctio incidunt quasi quis sit.
+                <p class="prompt">
+                    <a class="button" href="#">Read More</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--    counter-->
+    <section id="counterup" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h1 class="">Counterup</h1>
+            <div class="row justify-content-center mt-5 pb-5">
+                <div class="col-md-3 mt-5">
+                    <h4>Client</h4>
+                    <p class="counter" style="font-size: 24px;">1,234,567.00</p>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <h4>Income</h4>
+                    <p>$ <span class="counter" style="font-size: 24px;">1.99</span></p>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <h4>Viewers</h4>
+                    <p class="counter" style="font-size: 24px;">12345</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--skeletabs-->
+    <section id="skeletab" class="py-5">
+        <div class="container">
+            <h1 class="text-center">Skeletabs</h1>
+            <div id="skltab">
+                <!-- tabGroup -->
+                <ul class="list-inline skltbs-tab-group">
+                    <!-- tabItem -->
+                    <li class="list-inline-item skltbs-tab-item">
+                        <!-- tab -->
+                        <button class="skltbs-tab btn btn-outline-primary">Tab 1</button>
+                    </li>
+                    <li class="list-inline-item skltbs-tab-item">
+                        <button class="skltbs-tab btn btn-outline-primary">Tab 2</button>
+                    </li>
+                    <li class="list-inline-item skltbs-tab-item">
+                        <button class="skltbs-tab btn btn-outline-primary">Tab 3</button>
+                    </li>
+                </ul>
+                <!-- panelGroup -->
+                <div class="skltbs-panel-group">
+                    <!-- panel -->
+                    <div class="skltbs-panel">
+                        <h6>Tab 1</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo esse, iure nulla commodi blanditiis ipsum amet officiis mollitia accusamus quas, incidunt rem quae perferendis ipsa inventore voluptatum laudantium rerum!</p>
+                    </div>
+                    <div class="skltbs-panel">
+                        <h6>Tab 2</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ducimus dicta quidem, eligendi facilis accusantium, numquam libero cupiditate amet reprehenderit provident corrupti quibusdam vitae adipisci atque rerum dolorem ullam, saepe.</p>
+                    </div>
+                    <div class="skltbs-panel">
+                        <h6>Tab 3</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ducimus dicta quidem, eligendi facilis accusantium, numquam libero cupiditate amet reprehenderit provident corrupti quibusdam vitae adipisci atque rerum dolorem ullam, saepe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    wow-->
+    <section id="wow" class="bg-dark text-white py-5">
+        <div class="container">
+            <h1 class="text-center">WOW</h1>
+            <div class="row">
+                <div class="col-md-6 mt-4 wow slideInLeft" data-wow-duration="2s">
+                    <h4>SlideInLeft</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deleniti, autem cum soluta molestias cupiditate odio quod. Iusto aut laboriosam vel laudantium odio magni, soluta, tempore perspiciatis. Alias debitis ipsam eveniet, harum, maiores natus id temporibus nostrum itaque veritatis aperiam inventore, quos neque commodi vel modi eligendi. Inventore accusamus, molestiae.</p>
+                </div>
+                <div class="col-md-6 mt-4 wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
+                    <h4>SlideInRight</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deleniti, autem cum soluta molestias cupiditate odio quod. Iusto aut laboriosam vel laudantium odio magni, soluta, tempore perspiciatis. Alias debitis ipsam eveniet, harum, maiores natus id temporibus nostrum itaque veritatis aperiam inventore, quos neque commodi vel modi eligendi. Inventore accusamus, molestiae.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    magnific-->
+    <section id="magnific" class="py-5">
+        <div class="container">
+            <h1 class="text-center">Magnific Popup</h1>
+            <div class="row">
+                <div class="col-md-3 mt-4">
+                    <a href="images/menu4.jpg" class="image"><img src="images/menu4.jpg" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <a href="images/menu5.jpg" class="image"><img src="images/menu5.jpg" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <a href="images/menu6.jpg" class="image"><img src="images/menu6.jpg" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <a href="images/menu7.jpg" class="image"><img src="images/menu7.jpg" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <a href="images/menu4.jpg" class="image"><img src="images/menu4.jpg" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <a href="images/menu5.jpg" class="image"><img src="images/menu5.jpg" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <a href="images/menu6.jpg" class="image"><img src="images/menu6.jpg" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <a href="images/menu7.jpg" class="image"><img src="images/menu7.jpg" class="img-fluid" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--gallery-->
+    <section id="glightbox" class="py-5">
+        <div class="container">
+            <h1 class="text-center">Gallery Lightbox</h1>
+            <div class="row gallery">
+                <div class="col-md-3 mt-4">
+                    <a href="images/menu4.jpg" class="big" rel="rel1">
+                        <img src="images/menu4.jpg" class="img-fluid" alt="" title="Image 1">
+                    </a>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <a href="images/menu5.jpg" class="big" rel="rel1">
+                        <img src="images/menu5.jpg" class="img-fluid" alt="" title="Image 2">
+                    </a>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <a href="images/menu6.jpg" class="big" rel="rel2">
+                        <img src="images/menu6.jpg" class="img-fluid" alt="" title="Image 3">
+                    </a>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <a href="images/menu7.jpg" class="big" rel="rel2">
+                        <img src="images/menu7.jpg" class="img-fluid" alt="" title="Image 4">
+                    </a>
+                </div>
+                <div class="col-md-3 my-4">
+                    <a href="images/menu4.jpg" class="big" rel="rel1">
+                        <img src="images/menu4.jpg" class="img-fluid" alt="" title="Image 1">
+                    </a>
+                </div>
+                <div class="col-md-3 my-4">
+                    <a href="images/menu5.jpg" class="big" rel="rel1">
+                        <img src="images/menu5.jpg" class="img-fluid" alt="" title="Image 2">
+                    </a>
+                </div>
+                <div class="col-md-3 my-4">
+                    <a href="images/menu6.jpg" class="big" rel="rel2">
+                        <img src="images/menu6.jpg" class="img-fluid" alt="" title="Image 3">
+                    </a>
+                </div>
+                <div class="col-md-3 my-4">
+                    <a href="images/menu7.jpg" class="big" rel="rel2">
+                        <img src="images/menu7.jpg" class="img-fluid" alt="" title="Image 4">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--mixitup-->
+    <section id="mixup" class="py-5">
+        <div class="container">
+            <h1 class="text-center">MixItUp</h1>
+            <button type="button" class="btn btn-success" data-filter="all">All</button>
+            <button type="button" class="btn btn-success" data-filter=".category-a">Category A</button>
+            <button type="button" class="btn btn-success" data-filter=".category-b">Category B</button>
+            <button type="button" class="btn btn-success" data-filter=".category-c">Category C</button>
+            <div class="row myfilter">
+                <div class="col-md-3 mt-4">
+                    <div class="mix category-a" data-order="1">
+                        <img src="images/menu4.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <div class="mix category-b" data-order="2">
+                        <img src="images/menu5.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <div class="mix category-b category-c" data-order="3">
+                        <img src="images/menu6.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3 mt-4">
+                    <div class="mix category-a category-d" data-order="4">
+                        <img src="images/menu4.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    masonry-->
+    <section id="masonry" class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Masonry</h1>
+            <div class="row masonry" data-target=".item" data-col="12" data-col-sm="4" data-col-md="4">
+                <div class="col-12 col-sm-4 col-md-4">
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ex, quasi, ipsum impedit aliquam quibusdam veritatis atque, temporibus alias nesciunt quae nobis incidunt vel neque harum, excepturi natus laudantium dolorem?it amet, consectetur adipisicing elit. Odio ex, quasi, ipsum impedit aliquam quibusdam veritatis atque, temporibus alias nesciunt quae nobis incidunt vel neque harum, excepturi natus laudantium dolorem?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4">
+                    <div class="item">
+                        <img src="images/menu4.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4">
+                    <div class="item mt-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Hello</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ex, quasi, ipsum impedit aliquam quibusdam veritatis atque, temporibus alias nesciunt quae nobis incidunt vel neque harum, excepturi natus laudantium dolorem?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4">
+                    <div class="item mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ex, quasi, ipsum impedit aliquam quibusdam veritatis atque, temporibus alias nesciunt quae nobis incidunt vel neque harum, excepturi natus laudantium dolorem?it amet, consectetur adipisicing elit. Odio ex, quasi, ipsum impedit aliquam quibusdam veritatis atque, temporibus alias nesciunt quae nobis incidunt vel neque harum, excepturi natus laudantium dolorem?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4">
+                    <div class="item mt-5">
+                        <img src="images/menu4.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4">
+                    <div class="item mt-5">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Hello</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ex, quasi, ipsum impedit aliquam quibusdam veritatis atque, temporibus alias nesciunt quae nobis incidunt vel neque harum, excepturi natus laudantium dolorem?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--slick-->
+    <section id="slicks" class="bg-dark my-4 py-5 text-white">
+        <div class="container">
+            <h1 class="text-center mb-5">Slick Slider</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="myslick">
+                        <div><img src="images/menu4.jpg" class="img-fluid" alt=""></div>
+                        <div><img src="images/menu5.jpg" class="img-fluid" alt=""></div>
+                        <div><img src="images/menu6.jpg" class="img-fluid" alt=""></div>
+                        <div><img src="images/menu4.jpg" class="img-fluid" alt=""></div>
+                        <div><img src="images/menu5.jpg" class="img-fluid" alt=""></div>
+                        <div><img src="images/menu6.jpg" class="img-fluid" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    jq Function-->
+    <section id="jqfunc">
         <div class="container">
             <h1 class="text-center">Jquery Functions</h1>
             <div class="row">
@@ -134,10 +476,10 @@
                         <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, commodi.</p>
                     </div>
                 </div>
-                 <!--hide/slideDown/toggle-->
+                <!--hide/slideDown/toggle-->
                 <div class="col-md-6 mt-4">
                     <div class="hst">
-                        <h4>hide/show/toggle</h4>
+                        <h4>Hide/Show/Toggle</h4>
                         <button type="button" class="btn btn-secondary" id="hide">hide</button>
                         <button type="button" class="btn btn-secondary" id="show">show</button>
                         <button type="button" class="btn btn-secondary" id="toggle">toggle</button>
@@ -147,22 +489,149 @@
                 <!--slideUp/slideDown/slideToggle-->
                 <div class="col-md-6 mt-4">
                     <div class="slide">
-                        <h4>slideUp/slideDown/slideToggle</h4>
+                        <h4>SlideUp/SlideDown/SlideToggle</h4>
                         <button type="button" class="btn btn-secondary" id="up">slideUp</button>
                         <button type="button" class="btn btn-secondary" id="down">slideDown</button>
                         <button type="button" class="btn btn-secondary" id="st">slideToggle</button>
                         <p class="mt-4 bg-secondary p-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa pariatur fugiat repellendus amet doloremque delectus quo, nemo voluptates consequuntur temporibus rerum magnam quibusdam beatae velit nesciunt sint harum omnis odit!</p>
                     </div>
                 </div>
+                <!--addClass-->
+                <div class="col-md-6 mt-4">
+                    <div class="addcls">
+                        <h4>AddClass/RemoveClass/ToggleClass</h4>
+                        <p>Click here to add class</p>
+                        <p>Click here to remove class</p>
+                        <button type="button" class="btn btn-secondary">Add/Remove</button>
+                    </div>
+                </div>
+                <!--before/after-->
+                <div class="col-md-6 mt-4">
+                    <div class="bfaf">
+                        <h4>Before/After</h4>
+                        <button class="btn btn-secondary mb-3" id="bf">Add Before</button>
+                        <button class="btn btn-secondary mb-3" id="af">Add After</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                </div>
+                <!--append/prepend-->
+                <div class="col-md-6 mt-4">
+                    <div class="appp">
+                        <h4>append/prepend</h4>
+                        <button class="btn btn-secondary mb-3" id="ap">Append</button>
+                        <button class="btn btn-secondary mb-3" id="pp">Prepend</button>
+                        <ol>
+                            <li>Apple</li>
+                            <li>Orange</li>
+                        </ol>
+                    </div>
+                </div>
+                <!--clone-->
+                <div class="col-md-6 mt-4">
+                    <div class="clone">
+                        <h4>Clone</h4>
+                        <button class="btn btn-secondary">Click to clone</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, mollitia!</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
+    </section>
+    <button class="material-scrolltop" type="button"></button>
     <!--jQuery Links-->
     <script src="js/jquery-1.12.4.min.js"></script>
+    <!--plugins-->
+    <script src="vendor/onepagenav/jquery.nav.js"></script>
+    <script src="vendor/typed.js-master/typed.js"></script>
+    <script src="vendor/readmore/readmore.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="vendor/counter-up-master/jquery.counterup.min.js"></script>
+    <script src="vendor/skeletabs/skeletabs.js"></script>
+    <script src="vendor/wow-master/jq/wow.min.js"></script>
+    <script src="vendor/magnific-popup-master/jq/jquery.magnific-popup.js"></script>
+    <script src="vendor/simplelightbox-master/simple-lightbox.jquery.min.js"></script>
+    <script src="vendor/mixitup/mixitup.min.js"></script>
+    <script src="vendor/masonry/bootstrap4.masonry.min.js"></script>
+    <script src="vendor/slick/jq/slick.min.js"></script>
+    <script src="vendor/material-scrolltop-master/jq/material-scrolltop.js"></script>
+    <!--bootstrap jq-->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <script>
+        $(document).ready(function() {
+            //onepagenav
+            $('#nav').onePageNav({
+                currentClass: 'current',
+                changeHash: false,
+                scrollSpeed: 750,
+                scrollThreshold: 0.5,
+                filter: '',
+                easing: 'swing',
+                begin: function() {
+                    //I get fired when the animation is starting
+                },
+                end: function() {
+                    //I get fired when the animation is ending
+                },
+                scrollChange: function($currentListItem) {
+                    //I get fired when you enter a section and I pass the list item of the section
+                }
+            });
+            //typedjs
+            var typed = new Typed('.typedtext', {
+                strings: ['Welcome to learn jq plugin'],
+                stringsElement: null,
+                typeSpeed: 100,
+                backSpeed: 50,
+                loop: true,
+                loopCount: Infinity,
+                showCursor: false,
+            });
+            //read more
+            $(".read-more").readMore({
+                previewHeight: 120,
+                expandTrigger: ".prompt",
+                fadeColor1: "rgba(255,255,255,0)",
+                fadeColor2: "rgba(255,255,255,1)"
+            });
+            //counter plugin
+            $('.counter').counterUp({
+                delay: 10,
+                time: 5000
+            });
+            //skeletabs
+            $('#skltab').skeletabs();
+            //wow
+            new WOW().init();
+            //magnific popup
+            $('.image').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+            //simpleLightbox
+            var gallery = $('.gallery a').simpleLightbox({});
+            //mixitup
+            var mixer = mixitup('.myfilter');
+            //masonry
+            $(function() {
+                $('.masonry').masonry();
+            });
+            //slick
+            $('.myslick').slick({
+                dots: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+            //scrollToTop
+            $('body').materialScrollTop();
+        });
+
     </script>
 </body>
+
 </html>

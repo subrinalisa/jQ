@@ -121,14 +121,44 @@ $(document).ready(function () {
         $('.hst p').toggle("slow");
     });
     //    slideUp/slideDown/slideToggle
-    $('#up').click(function(){
+    $('#up').click(function () {
         $('.slide p').slideUp("slow");
     });
-    $('#down').click(function(){
+    $('#down').click(function () {
         $('.slide p').slideDown("slow");
     });
-    $('#st').click(function(){
+    $('#st').click(function () {
         $('.slide p').slideToggle("slow");
+    });
+    //    addClass
+    $('.addcls p:first').click(function () {
+        $('.addcls').addClass("bgyellow font");
+    });
+    //    removeClass
+    $('.addcls p:last').click(function () {
+        $('.addcls').removeClass("bgyellow");
+    });
+    //    removeClass
+    $('.addcls button').click(function () {
+        $('.addcls').toggleClass("bgyellow");
+    });
+    //    before/after
+    $('#bf').click(function () {
+        $('.bfaf p').before("<p>Hello world</p>");
+    });
+    $('#af').click(function () {
+        $('.bfaf p').after("<p>Hello world</p>");
+    });
+    //    append/prepend
+    $('#ap').click(function () {
+        $('.appp ol').append("<li>Banana</li>");
+    });
+    $('#pp').click(function () {
+        $('.appp ol').prepend("<li>Cherry</li>");
+    });
+    //    clone
+    $('.clone button').click(function () {
+        $('.clone p').clone().appendTo('.clone');
     });
 
 });

@@ -9,3 +9,9 @@
 .slide p{
     display: none;
 }
+.bgyellow{
+    background: yellow;
+}
+.font{
+    font-size: 30px;
+}
